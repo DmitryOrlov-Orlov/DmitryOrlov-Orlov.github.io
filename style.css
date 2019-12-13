@@ -1,0 +1,953 @@
+/*медиазапрос от ширины браузера*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6;
+  background-attachment: scroll;
+  
+  }
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4 ,h5, h6 {
+  margin: 0;
+}
+
+/* header */
+.header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding-top: 30px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+.header__logo {
+  width: 180px;
+  height: 70px;
+  background: url("img/header__logo.jpg") center no-repeat;
+  background-size: contain;
+}
+.nexnumber {
+  color: #ffffff;
+}
+.tex {
+  font-size: 21px;
+}
+.number {
+  font-size: 34px;
+  text-decoration: none;
+  transition: color .2s linear;
+  color: #ffffff;
+}
+.number:hover {
+  color: #fbc200;
+}
+
+
+/* container */
+.container {    
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+  
+/* intro  */
+
+.intro {  
+  width: 100%;  
+  height: 480px;
+  background: url("img/intro.png") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; 
+
+}
+.intro__inner {
+  width: 100%;
+  max-width: 1200px;  
+  margin: 0 auto;  
+}
+.intro__title {
+  font-size: 70px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, .5) ;
+  position: relative;
+  top: 210px;  
+}
+.priceServices {
+  
+  height: 370px;    
+  display: flex;  
+  justify-content: center;
+}
+
+.introPriceServices {
+  width: 300px;
+  /*height: 60px;*/  
+  display: flex;
+  align-items: center;
+  margin-top: 170px;
+}
+.introPriceIMG {
+  background: url("img/introPriceIMG.png") center no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+}
+.introServicesIMG {
+  background: url("img/introServicesIMG.png") center no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  margin-left: 15px;
+}
+.introDeadlinesIMG {
+  background: url("img/introDeadlinesIMG.png") center no-repeat;
+  background-size: contain;
+  width: 60px;
+  height: 60px;
+  margin-left: 40px;
+}
+.introPriceServicesText {
+  font-size: 18px;
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+
+/*Кнопка заказать техплан*/
+.dws {  
+  width: 240px;
+  height: 50px;
+  background-color: #ffa500;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;    
+}
+.intro__butt {
+  text-decoration: none;
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin-top: -30px;
+  color: #000000;
+  line-height: 50px;
+  font-weight: bold;
+}
+.intro__butt:hover {
+  border: 2px solid #ffa500;
+  border-radius: 10px;
+}
+
+
+
+/*второй уровень с белым фоном*/
+
+.secondJob {
+  height: 170px;
+  
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 100px;
+  display: block;
+  text-align: center;  
+}
+.secondDocumentation {
+  display: flex; 
+  flex-wrap: wrap;
+  
+  margin: 0 auto;
+}
+.secondDocumentationOdin {
+  width: 1200px;
+  height: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 10px;
+}
+
+.secondDokyQ {  
+  width: 25%;
+    height: 85px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: -130px;*/
+}
+
+.secondDokyW {  
+  width: 25%;
+     height: 85px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: -130px;*/
+}
+.secondDokyE {  
+  width: 25%;
+    height: 85px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* margin-top: -130px;  */ 
+}
+.secondDokyNumber {
+  font-size: 110px;
+  margin: 0;  
+  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke-color: #dfe9f5;
+  -webkit-text-stroke-width: 2.00px; 
+  line-height: 1;
+}
+.secondDokyText {  
+  position: relative;
+  left:-27px;
+  line-height: 1.5;
+  
+}
+.secondDokyText4 {  
+  
+  position: relative;
+  left:-20px;
+  line-height: 1.5;
+}
+.secondDokyTextBolt {
+  font-weight: bold; 
+  font-size: 18px;
+}
+.secondDokyTextRegular {
+  font-size: 16px;  
+  width: 253px;
+}
+.secondDokyTextLink {
+  color: #2252bf; 
+}
+
+
+
+/*уровень три 
+          //<div class="yrovenNiz">*/
+
+.yrovenThree {
+  width: 100%;
+  height: 380px; 
+  background: url("img/yroventhree.png") center no-repeat;
+  background-size: cover;
+  display: block;
+}
+.yrovenVerx {
+  width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+}
+.yrovenVerxOne {
+  width: 50%;
+  height: 160px;
+  display: flex;
+}
+.yrovenVerxOneImg {
+  background: url("img/yrovenVerxOneImg.png") center no-repeat;
+  background-size: contain;
+  width: 100px;  
+  margin: 80px 0 0 10px;
+}
+.yrovenVerxTwoImg {
+  background: url("img/yrovenVerxTwoImg.png") center no-repeat;
+  background-size: contain;
+  width: 100px;  
+  margin: 80px 0 0 10px;
+}
+.yrovenVerxText {
+  font-size: 18px;
+  margin: 95px 0 0 15px;
+  width: 390px;
+}
+
+.yrovenNiz {
+  width: 100%;
+  height: 210px;
+  
+  display: flex;
+}
+.yrovenNizOneImg {
+  background: url("img/yrovenNizOneImg.png") center no-repeat;
+  background-size: contain;
+  width: 100px;  
+  margin: 80px 0 0 10px;
+}
+.yrovenNizTwoImg {
+  background: url("img/yrovenNizTwoImg.png") center no-repeat;
+  background-size: contain;
+  width: 100px;  
+  margin: 80px 0 0 10px;
+}
+.yrovenNizText {
+  font-size: 18px;
+  margin: 100px 0 0 15px;
+  width: 330px;
+}
+
+
+/*четвертый уровень где поля для ввода*/
+
+.fioBlock {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  
+  align-items: center;
+}
+.fioCenter {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  
+  margin: 0 10px;
+}
+.fioOne {
+  width: 430px;
+  height: 54px;
+  background-color: #eff5fa;  
+  font-size: 18px;
+  border-radius: 10px 0 0 10px;
+  outline:none;
+  padding: 0 30px;  
+  transition: all .3s;
+  border: 2px solid #eff5fa;
+  margin-right: 2px;
+}
+
+.fioNumber {
+  width: 430px;
+  height: 55px;
+  background-color: #eff5fa;
+  font-size: 18px;
+  outline:none;
+  padding: 0 30px;
+  border: 2px solid #eff5fa;
+}
+.fioOne:hover, .stfioNumberrw:hover, 
+.fioOne:focus, .fioNumber:focus {
+  border: 2px solid #fbc200;
+} 
+.fioTexplan {
+  width: 320px;
+  height: 55px;
+  font-size: 18px;
+  text-decoration: none; 
+  line-height: 50px;
+  color: #000000;
+  text-align: center;
+  background-color: #fbc200;
+  border-radius: 0 10px 10px 0;
+}
+.fioTexplan:hover {
+  border: 2px solid #fbc200;
+  border-radius: 0 10px 10px 0;
+}
+
+/*о компании*/
+
+.companiBlock {
+  width: 100%;
+  height: 90px;
+  
+  font-size: 40px;
+  text-align: center;
+}
+
+/*непосредственно сам текст О КОМАПНИИ*/
+
+.rmkText {  
+  width: 100%;
+  
+  margin-bottom: 120px;
+  font-size: 17px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/*линия*/
+
+.hrhr {
+  border: none;
+  background-color: #e1eaf6;
+  color: #e1eaf6;
+  height: 2px; /* Толщина линии */
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/*екб бажов justify-content: space-between;*/
+
+
+.ekbcont {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  margin: 64px 0 90px;
+  
+  flex-wrap: wrap;
+}
+.ekbBajov {
+  width: 300px;
+  
+  
+  display: flex;
+  align-items: center;
+  /*margin: 60px 0 0 300px;*/
+}
+.ekbBajovImg {
+  background: url("img/ekbBajovImg.png") center no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 60px;
+}
+.ekbBajovText {
+  font-size: 20px;
+  margin-left: -20px;
+  line-height: 1.3;  
+}
+
+.ekbNumber {
+  width: 300px;
+  
+  
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.ekbNumberImg {
+  background: url("img/ekbNumberImg.png") center no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 60px;
+}
+
+.ekbNumberText {
+  font-size: 20px;
+  margin-left: -20px;
+  line-height: 1.3;
+}
+
+
+
+/*подвал */
+.podval {
+  width: 100%;
+  height: 50px;
+  background-color: #eff5fa;
+  align-items: center;
+  display: flex; 
+}
+.podvalfon { 
+  font-size: 14px;  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*МЕДИА-ЗАПРОСЫ*/
+/*МЕДИА-ЗАПРОСЫ*/
+/*МЕДИА-ЗАПРОСЫ*/
+/*МЕДИА-ЗАПРОСЫ*/
+/*МЕДИА-ЗАПРОСЫ*/
+/*МЕДИА-ЗАПРОСЫ*/
+
+@media (max-width: 1200px){
+  /*ВРОТОЙ УРОВЕНЬ*/  
+  .secondDokyQ {
+    width: 50%;
+  }
+  .secondDokyW {
+    width: 50%;
+  }
+  .secondDokyE {
+    width: 50%;
+
+}
+/* третий уровень*/
+.yrovenVerxOneImg {
+  
+  width: 90px;
+}
+.yrovenVerxTwoImg {
+  
+  width: 90px;
+}
+.yrovenNizOneImg {
+  
+  width: 60px;
+  margin: 80px 0 0 30px;
+}
+.yrovenNizTwoImg {
+  
+  width: 80px;
+}
+ /* четвертый уровень*/
+ /* четвертый уровень*/
+ /* четвертый уровень*/
+ .fioOne {
+  width: 35%;
+ }
+ .fioNumber {
+  width: 35%;
+}
+.fioTexplan {
+  width: 30%;
+}
+
+
+
+
+
+@media (max-width: 1040px){
+  /*третий уровень*/
+  .yrovenVerxText {
+    
+    margin: 0x;
+    width: 386px;
+}
+.yrovenNizText {
+  
+    margin: 0 0 0 15px;
+    width: 386px;
+
+}
+.yrovenVerxOne {
+  width: 100%;
+  height: 56px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.yrovenVerxOneImg {
+  
+  margin: 0;
+}
+.yrovenVerxText {
+ 
+  margin: 0 0 0 15px;
+}
+.yrovenVerxTwoImg {
+  
+  margin: 0;
+}
+.yrovenNizOneImg {
+  width: 90px;
+  margin: 0; 
+}
+.yrovenNizTwoImg {
+  margin: 0;
+  width: 90px;
+}
+
+}
+@media (max-width: 1000px){
+  /*первый уровень*/
+  .header__logo {
+    width: 140px;
+}
+  .tex {
+    font-size: 16px;
+}
+  .number {
+  font-size: 21px;
+}
+.intro__title {
+  font-size: 48px;
+  top: 110px;
+} 
+  .introPriceServicesText {
+  font-size: 16px;
+  padding-left: 11px;
+  color: #ffffff;
+}
+  .intro__butt {
+    margin-top: 5px;
+}
+  .priceServices {
+  display: block;
+  margin: 0 auto;
+}
+  .introPriceServices {  
+  margin: 12px auto;
+  width: 250px;
+}
+  .introDeadlinesIMG {  
+  margin-left: 0px;
+}
+  .introServicesIMG { 
+  margin-left: 0px;
+}
+  .priceServices {
+  padding-top: 120px;
+}
+  .introPriceServicesText {
+  padding-left: 30px;  
+}
+/*ВРОТОЙ УРОВЕНЬ*/
+/*ВРОТОЙ УРОВЕНЬ*/
+/*ВРОТОЙ УРОВЕНЬ*/
+.secondJob {  
+  padding-top: 80px;
+
+}
+
+
+
+}
+@media (max-width: 800px){
+  
+ /* четвертый уровень*/
+ /* четвертый уровень*/
+ /* четвертый уровень*/
+ .fioBlock {
+  
+   align-items: baseline;
+}
+ .fioCenter {
+  
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ .fioOne {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.fioNumber {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.fioTexplan {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+
+/*пятый уровень*/
+.companiBlock {  
+  margin-top: 20px;
+  height: 50px;
+}
+.companiBlock {  
+  font-size: 36px;
+}
+.rmkText { 
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+/*шестой уровень*/
+.ekbcont {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  margin: 30px 0 50px;
+  flex-wrap: wrap;
+}
+.ekbBajovText {
+  font-size: 16px;
+}
+.ekbNumberText {
+  font-size: 16px;
+}
+.ekbBajov {
+  width: 50%;
+  max-width: 250px;
+}
+.ekbNumber {
+  width: 50%;
+  max-width: 170px;
+}
+/*внизу про екатеринбург шестой ур*/
+.ekbBajovText {
+  font-size: 14px;
+}
+.ekbNumberText {
+  font-size: 14px;
+}
+
+
+
+}
+
+
+@media (max-width: 720px){
+  /*первый уровень*/
+  .header__logo {
+    width: 115px;
+}
+  .tex {
+  font-size: 13px;
+}
+  .number {
+  font-size: 15px;
+}
+  .intro__title {
+  font-size: 40px;
+  top: 110px;
+}
+  .intro__butt {
+  margin-top: 15px;
+}
+  .introPriceIMG { 
+  width: 55px;  
+}
+  .introPriceServicesText {
+  font-size: 15px;  
+  padding-left: 21px;
+}
+  .introServicesIMG {
+  width: 55px;
+}
+  .introDeadlinesIMG {
+  width: 55px;
+}
+  .dws {  
+  font-size: 18px;
+}
+  .introPriceServices {  
+  width: 230px;
+}
+/*ВРОТОЙ УРОВЕНЬ*/
+/*ВРОТОЙ УРОВЕНЬ*/
+/*ВРОТОЙ УРОВЕНЬ*/
+.secondDokyNumber {
+  font-size: 100px;
+}
+.secondDokyTextBolt {
+  
+  font-size: 16px;
+}
+.secondDokyTextRegular {
+  font-size: 16px;
+  width: 253px;
+}
+
+/* подвал */
+.podvalfon {
+  font-size: 12px;
+}
+}
+
+
+
+
+
+
+@media (max-width: 600px){
+  /*ВРОТОЙ УРОВЕНЬ*/
+/*ВРОТОЙ УРОВЕНЬ*/
+/*ВРОТОЙ УРОВЕНЬ*/
+.secondJob {
+  height: 170px; 
+  padding-top: 35px;
+  font-size: 20px;
+}
+
+.secondDokyQ {
+  width: 100%;
+  margin-top: -80px;
+}
+.secondDokyW {
+  width: 100%;
+}
+.secondDokyE {
+  width: 100%;
+}
+.secondDokyNumber {
+  font-size: 80px;
+}
+.secondDokyTextBolt {
+    font-size: 15px;
+}
+.secondDokyTextRegular {
+  font-size: 14px;
+  width: 221px;
+}
+.secondDokyText {
+  
+  left: -20px;
+  
+}
+.secondDocumentationOdin {
+ 
+  margin: 0px 10px 50px;
+}
+.secondJob {
+  
+  padding-top: 41px;
+  font-size: 29px;
+}
+/*третий уровень*/
+/*третий уровень*/
+/*третий уровень*/
+
+.yrovenVerxOneImg {
+  width: 60px;
+}
+.yrovenVerxTwoImg {
+  width: 60px;
+}
+.yrovenNizOneImg {
+  width: 60px;
+  
+}
+.yrovenNizTwoImg {
+  
+  width: 60px;
+}
+.yrovenVerxText {
+  font-size: 15px;
+}
+.yrovenNizText {
+  font-size: 15px;
+}
+.yrovenVerxText {
+  
+  width: 322px;
+}
+.yrovenNizText {
+  margin: 0 0 0 15px;
+  width: 322px;
+}
+}
+
+}
+@media (max-width: 560px){
+  /*первый уровень*/
+  .header__logo {
+    width: 89px;
+}
+  .tex {
+  font-size: 11px;
+}
+  .number {
+  font-size: 12px;
+}
+  .intro__title {
+  font-size: 25px;
+  top: 105px;
+}
+  .intro__butt {
+  margin-top: 22px;
+} 
+  .header__inner {
+  margin: -9px 10px;
+}
+  .introPriceIMG {
+  width: 45px;
+}
+  .introServicesIMG {
+  width: 45px;
+}
+  .introDeadlinesIMG {
+  width: 45px;
+}
+  .introPriceServicesText {
+  padding-left: 15px;
+  font-size: 13px;
+}
+  .intro__butt {
+  margin-top: 40px;
+}
+  .dws {  
+  font-size: 17px;
+}
+  .introPriceServices {
+  margin: 21px auto;
+  width: 200px;
+}
+
+
+/*ВРОТОЙ УРОВЕНЬ*/
+/*ВРОТОЙ УРОВЕНЬ*/
+/*ВРОТОЙ УРОВЕНЬ*/
+
+}
+
+
+@media (max-width: 560px){
+  /*первый уровень*/
+  .dws {  
+  width: 200px;  
+}
+  .intro__butt {  
+  width: 200px;  
+  margin-top: 43px;  
+}
+}
+
+
+
+
+
+
+
+@media (max-width: 500px){
+    /*первый уровень*/
+.intro__title {
+  font-size: 21px;
+ 
+}
+  /*шестой уровень*/
+  .ekbBajov {
+    width: 100%;
+    max-width: 230px;
+}
+.ekbNumber {
+  width: 100%;
+  max-width: 250px;
+  margin-top: 15px;
+}
+/*третий уровень*/
+
+.yrovenVerxText {
+  font-size: 13px;
+  margin-top: 11px;
+}
+.yrovenNizText {
+  font-size: 13px;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+}
+
+
+
