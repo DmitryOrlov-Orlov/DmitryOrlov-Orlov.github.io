@@ -1,0 +1,82 @@
+/*начало абсолютного позиционирования */
+.heart{  
+  display: flex;
+  position: absolute;
+  margin: 42px 0px 0 309px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url('../images/indexImages/heart.svg');
+}
+
+.like{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url('../images/indexImages/like.svg');
+  margin: 160px 0 0 281px; /* нужно dscnfdbnm */
+}
+
+/* стили для ВТОРОЙ страницы */
+.button-back{
+  position: absolute;
+  width: 35px;
+  height: 38px;
+  background: url('../images/CartScreen/buttonBack.svg');
+}
+/* конец абсолютного позиционирования */
+
+.purchase-button{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 219px;
+  height: 49px;
+  border-radius: 8px;  
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 13px;
+  background: #FF416E;
+  color: #FFFFFF;
+}
+
+.input-button-input{
+  width: 50%;
+  border-radius: 33px 0px 0px 33px;
+  outline: none;
+  text-align: center;
+  border: none;
+  font-size: 13px;
+  line-height: 12px;
+  color: #979AA1;
+  background: #F6F6F8;
+}
+
+.input-button-button{
+  padding: 0;
+  width: 50%; 
+  border-radius: 0 33px 33px 0;
+  outline: none;
+  border: none;
+  font-size: 13px;
+  line-height: 12px;
+  color: #596273;
+  background: url('../images/indexImages/bottle.svg') 13px no-repeat #F6F6F8;  
+}
+
+/*  крайняя кнопка  */
+.button-processed{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 219px;
+  height: 49px;
+  background: #475062;
+  border-radius: 8px;  
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 13px;
+  color: #FFFFFF;
+  text-decoration: none;
+}

@@ -1,0 +1,94 @@
+body{  
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;   
+  margin: 0;
+  padding: 0;  
+  background-color: #ccc;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;  
+  width: 375px;
+  height: 708px;  
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  width: 268px;
+  height: 64px;  
+  margin: 0 auto;
+  margin-top: 29px;
+}
+
+.carousel{  
+  width: 100%;
+  height: 306px;
+  margin-top: 36px;
+}
+
+.input-button{
+  display: flex;
+  width: 217px;
+  height: 53px;
+  margin: 0 auto;
+  margin-top: 24px;
+  border-radius: 33px;
+  background: #F6F6F8;
+}
+
+.price{
+  width: 108px;
+  height: 33px;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
+.purchase{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 219px;
+  height: 74px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.purchase-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 186px;
+  height: 12px;
+}
+
+/* стили для ВТОРОЙ страницы */
+.upper-cart{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 375px;
+  height: 61px;    
+  padding-bottom: 5.5px;
+}
+
+.upper-item-added{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 28px;
+  margin-left: 75.5px;
+  font-size: 13px;
+  line-height: 12px;
+  color: #4C5669;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 0.5px solid #596273;
+}

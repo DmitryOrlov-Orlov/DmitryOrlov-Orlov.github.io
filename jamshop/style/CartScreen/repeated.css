@@ -1,0 +1,134 @@
+.repeated{
+  display: flex;
+  align-items: flex-end;
+  width: 356px;
+  height: 77px;
+  margin: 0 0 2px 12px;  
+}
+
+.rectangle{
+  display: flex;
+  width: 351px;
+  height: 71px;
+  border-radius: 11px;
+  background: #F6F6F8;
+}
+
+.repeated-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 95px;
+  height: 31px;
+  margin: 17px 26px 0 14.88px;
+}
+
+.text-top{
+  font-size: 15px;
+  line-height: 14px;
+  color: #252B35;
+}
+
+.text-bottom{
+  font-size: 11px;
+  line-height: 10px;
+  color: #596273;
+}
+
+.quantity-price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 69px;
+  height: 30px;
+  margin: 20px 0 0 9px;
+  border-radius: 11px;  
+  border: 0.5px solid #818A99;
+  font-size: 15px;
+  line-height: 14px;
+  color: #252B35;  
+}
+
+.cross{
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  margin: -57px 0 0 336px;
+  border-radius: 50%;
+  background: url('../../images/CartScreen/cross.svg') center no-repeat;
+}
+
+/* изображение для первого блока */
+.repeated-img-first{
+  width: 39.64px;
+  height: 59.06px;
+  margin: 5px 0 0 5.47px;
+  background: url('../../images/CartScreen/first-img.svg') center no-repeat #F6F6F8;  
+}
+
+/* изображение для второго блока */
+.repeated-img-second{
+  width: 39.64px;
+  height: 59.06px;
+  margin: 5px 0 0 5.47px;
+  background: url('../../images/CartScreen/second-img.svg') center no-repeat #F6F6F8;  
+}
+
+/* изображение для третьего блока */
+.repeated-img-third{
+  width: 39.64px;
+  height: 59.06px;
+  margin: 5px 0 0 5.47px;
+  background: url('../../images/CartScreen/third-img.svg') center no-repeat #F6F6F8;  
+}
+
+/* изображение для четвертого блока */
+.repeated-img-fourth{
+  width: 39.64px;
+  height: 59.06px;
+  margin: 5px 0 0 5.47px;
+  background: url('../../images/CartScreen/fourth-img.svg') center no-repeat #F6F6F8;  
+}
+
+/* изображение для пятого блока */
+.repeated-img-fifth{
+  width: 39.64px;
+  height: 59.06px;
+  margin: 5px 0 0 5.47px;
+  background: url('../../images/CartScreen/fifth-img.svg') center no-repeat #F6F6F8;  
+}
+
+/* верхний отспут у блока total amount */
+.repeated.total{
+  margin-top: 22px;
+}
+
+.rectangle-total{
+  display: flex;
+  width: 351px;
+  height: 71px;
+  border-radius: 11px;
+  align-items: center;
+  background: #F6F6F8;
+}
+
+.total-top{
+  font-size: 20px;
+  line-height: 19px;
+  color: #000000;
+  margin-left: 19px;
+}
+
+.total-bottom{
+  font-size: 11px;
+  line-height: 10px;
+  color: #596273;
+  margin-left: 19px;
+}
+
+.total-price{
+  font-size: 20px;
+  line-height: 19px;
+  color: #000000;
+  margin-left: 151px;
+}

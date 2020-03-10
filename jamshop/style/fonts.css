@@ -1,0 +1,39 @@
+@font-face{
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf');
+}
+
+.header-text-top{
+  font-size: 35px;
+  line-height: 32px;
+  margin: 0;
+  color: #252C3B;
+}
+
+.header-text-bottom{
+  font-size: 11px;
+  line-height: 10px;
+  margin: 0;
+  color: #596273;
+}
+
+.price{
+  font-size: 35px;
+  line-height: 32px;
+  color: #252C3B;
+}
+
+.purchase-text{
+  font-size: 10px;
+  line-height: 9px;
+  margin: 0;  
+  color: #8F98A8;
+}
+
+/* стили для ВТОРОЙ страницы */
+.upper-text{
+  font-size: 20px;
+  line-height: 19px;
+  color: #252C3B;
+  margin-left: 51px;
+}
