@@ -1,6 +1,22 @@
 .purchase-vector{
   width: 12px;
   height: 12px;
-  padding-left: 6px;
+  margin-left: 7px;
   background: url('../images/indexImages/vector.svg') center no-repeat;
+}
+
+.carousel-rest{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 230px;
+  height: 289px;
+  background: #F6F6F8;
+  border-radius: 14px;
+}
+
+.carousel-first-img{
+  width: 168.34px;
+  height: 335px;
+  background: url('../images/indexImages/image.svg') no-repeat;
 }

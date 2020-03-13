@@ -1,9 +1,25 @@
+.crloll{
+  width: 375px;
+  height: 421px;
+  overflow: scroll;
+}
+
+.crloll::-webkit-scrollbar{
+  width: 5px;
+}
+.crloll::-webkit-scrollbar-thumb{
+  border-width:1px 1px 1px 2px;
+  border-color: #777;
+  background-color: rgb(186, 186, 187);;
+}
+
 .repeated{
   display: flex;
   align-items: flex-end;
+  position: relative;
   width: 356px;
   height: 77px;
-  margin: 0 0 2px 12px;  
+  margin: 0 0 7px 12px;  
 }
 
 .rectangle{
@@ -45,15 +61,38 @@
   border-radius: 11px;  
   border: 0.5px solid #818A99;
   font-size: 15px;
-  line-height: 14px;
+  line-height: 14px;  
+  text-align: center;
+  background-color: #F6F6F8;
+  outline: none;
   color: #252B35;  
 }
 
+.quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 69px;
+  height: 28px;
+  margin: 20px 0 0 9px;
+  border-radius: 11px;  
+  border: 0.5px solid #818A99;
+  font-size: 15px;
+  line-height: 14px;  
+  text-align: center;
+  background-color: #F6F6F8;
+  outline: none;
+  color: #252B35;  
+}
+.quantity::-webkit-input-placeholder{
+  color: #252B35;  
+}
 .cross{
   position: absolute;
   width: 17px;
   height: 17px;
-  margin: -57px 0 0 336px;
+  top: 0;
+  right: 0;
   border-radius: 50%;
   background: url('../../images/CartScreen/cross.svg') center no-repeat;
 }
@@ -98,15 +137,11 @@
   background: url('../../images/CartScreen/fifth-img.svg') center no-repeat #F6F6F8;  
 }
 
-/* верхний отспут у блока total amount */
-.repeated.total{
-  margin-top: 22px;
-}
-
 .rectangle-total{
   display: flex;
   width: 351px;
   height: 71px;
+  margin: 22px 0 0 12px;
   border-radius: 11px;
   align-items: center;
   background: #F6F6F8;

@@ -2,7 +2,7 @@
 .heart{  
   display: flex;
   position: absolute;
-  margin: 42px 0px 0 309px;
+  right: 0;
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -14,7 +14,8 @@
   width: 32px;
   height: 32px;
   background: url('../images/indexImages/like.svg');
-  margin: 160px 0 0 281px; /* нужно dscnfdbnm */
+  top: 35px;
+  right: 62px;
 }
 
 /* стили для ВТОРОЙ страницы */
@@ -62,6 +63,7 @@
   line-height: 12px;
   color: #596273;
   background: url('../images/indexImages/bottle.svg') 13px no-repeat #F6F6F8;  
+  cursor: pointer;
 }
 
 /*  крайняя кнопка  */
