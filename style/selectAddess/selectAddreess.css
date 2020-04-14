@@ -1,0 +1,88 @@
+.header-text{
+  display: flex;
+  width: 375px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+  line-height: 18px;
+  color: #252C3B;
+}
+
+.clicks-text{
+  display: block;
+  width: 264px;
+  height: 23px;
+  margin: 0 auto;
+  margin-top: 48px;   /* это подправить */
+  margin-bottom: 35px;
+  font-size: 10px;
+  line-height: 12px;
+  color: #6E7A90;
+}
+
+.history-address{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:278px;
+  height:378px;
+  margin: 0 auto;
+  margin-bottom: 82px;
+  background: #FFFFFF;
+}
+
+.square-address{  
+  position: relative;
+  width: 132px;
+  height: 116px;
+  margin-bottom: 15px;
+  border: 1px solid #54BDB0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 31px 20px 10px 22px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #252C3B;
+  background: #FFFFFF;
+}
+
+.square-address:hover{  
+  background: #67D4C7;
+}
+
+.small-like{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  background: url('../../images/selectAddress/Group.svg');
+}
+
+.button-new-address{
+  display: block;
+  width: 132px;
+  height: 116px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 13px;
+  color: #252C3B;  
+  background: url('../../images/selectAddress/add.svg') 10px 10px 10px 10px center no-repeat;
+  
+  
+}
+
+.button-new-address:hover{
+  background: #67D4C7;
+}
+
+/* .button-new-address-img{
+  width: 24px;
+  height: 24px;
+  background: url('../../images/selectAddress/add.svg') center no-repeat;
+} */

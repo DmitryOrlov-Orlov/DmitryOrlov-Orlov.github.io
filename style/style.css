@@ -81,8 +81,8 @@ body{
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 375px;
-  height: 61px;    
-  padding-bottom: 11px;
+  height: 61px;    /* 61 */
+  /* padding-bottom: 11px; */
 }
 
 .upper-item-added{
