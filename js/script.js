@@ -4,7 +4,7 @@ var cardsData = [{
     textTop: 'Golden fruit jam',
     textBottom: 'Quantity 01 Bottle',
     price: 11.99,
-    amount: 10
+    amount: 1
   },
   {
     id: 2,
@@ -12,7 +12,7 @@ var cardsData = [{
     textTop: 'Golden fruit jam',
     textBottom: 'Quantity 01 Bottle',
     price: 8.00,
-    amount: 2
+    amount: 1
   },
   {
     id: 3,
@@ -64,7 +64,7 @@ function createCard(product) {
         <span class='text-top'>${product.textTop}</span>
         <span class='text-bottom'>${product.textBottom}</span>
       </span>
-      <input class='quantity' placeholder=1 value='${product.amount}' type='number' ></input>
+      <input class='quantity' placeholder=1 value='${product.amount}' type='number' data-id=${product.id}></input>
       <span class='quantity-price'>$${(product.price * product.amount).toFixed(2)}</span>
       <button class='cross' data-id=${product.id}></button>
     </div>
@@ -86,9 +86,27 @@ function renderList() {
     button.onclick = deleteItem;
   });
 
+  const priceInputs = document.querySelectorAll('.quantity');
+  priceInputs.forEach(input => {
+    input.onchange = changePrice;
+  });
+
   sumPrice();
 
   quantityCards();
+}
+
+function changePrice(e) {
+  const id = Number(e.target.getAttribute('data-id'));
+  const amount = Number(e.target.value);
+
+  /* let cardItem = cardsData.find(i => id === i.id); */
+  cardsData.forEach(i => {
+    if (id === i.id) {
+      i.amount = amount;
+    }
+  });
+  renderList();
 }
 
 function deleteItem(e) {
@@ -110,5 +128,6 @@ function quantityCards() {
   var quantityElements = document.querySelector('.scroll').children.length;
   quantityItemAdded.innerHTML = `${quantityElements} Item added`;
 }
+
 
 renderList();

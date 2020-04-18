@@ -1,9 +1,7 @@
-let chbox;
-chbox = document.getElementById('first');
+let arr = [1,2,3,4,5,6,7,8,9,10];
 
-if (chbox.checked){
-  alert('Выбран');
-}
-else {
-  alert('Не выбран');
-}
+arr.push('Привет');
+arr.shift();
+arr.unshift("ага");
+
+alert(arr);
